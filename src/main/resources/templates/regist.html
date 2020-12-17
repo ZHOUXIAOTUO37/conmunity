@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>登录</title>
+    <title>注册</title>
 </head>
 
 <style>
-    #box {
+    #box{
         width: 370px;
         height: 400px;
         border: 1px solid #E2E3E5;
@@ -19,8 +16,7 @@
         margin-left: -185px;
         margin-top: -200px;
     }
-
-    #logo {
+    #logo{
         width: 370px;
         height: 95px;
         font-size: 30px;
@@ -28,28 +24,17 @@
         line-height: 95px;
         margin-left: 40px;
     }
-
-    #user {
+    #user{
         width: 295px;
         height: 50px;
         margin-left: 40px;
     }
-
-    #pass {
+    #pass{
         width: 295px;
         height: 50px;
         margin-left: 40px;
     }
-
-    #btn-login {
-        width: 295px;
-        height: 50px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-
-    #btn-regist {
-        position: relative;
+    #btn-login{
         width: 295px;
         height: 50px;
         margin-left: 40px;
@@ -59,21 +44,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>登录页面</title>
+    <title>注册页面</title>
 </head>
 <body>
 <canvas class="particle"></canvas>
-<form action="/login" method="post">
+<form action="/regist" method="post">
     <div id="box">
-        <div id="logo">欢迎登陆！</div>
+        <div id="logo">请注册！</div>
         <div id="info">
             <input name="username" type="text" class="form-control" id="user" placeholder="账号:">
             <input name="password" type="password" class="form-control" id="pass" placeholder="密码:">
-            <button class="btn btn-info" id="btn-login">登录</button>
-            <a href="/regist" class="btn btn-info" id="btn-regist">注册</a>
+            <button class="btn btn-info" id="btn-login" nclick="VerifyLogin()">注册</button>
         </div>
     </div>
 </form>
-
 </body>
 </html>
